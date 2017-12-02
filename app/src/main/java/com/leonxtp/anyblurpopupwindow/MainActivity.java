@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private void showBlurDialog() {
         if (dialogFragment == null) {
             dialogFragment = SimpleBlurDialogFragment
-                    .newInstance(R.layout.layout_my_pop_content, R.style.blur_pop_aim_style);
+                    .newInstance(R.layout.layout_my_pop_content);
             dialogFragment.setCancelable(true);
         }
         if (!dialogFragment.isShowing()) {
