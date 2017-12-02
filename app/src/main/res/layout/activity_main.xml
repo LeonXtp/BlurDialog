@@ -8,10 +8,9 @@
     tools:context="com.leonxtp.anyblurpopupwindow.MainActivity">
 
     <Button
-        android:id="@+id/btnShowPop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="showPopup"
-        android:text="showPopup" />
+        android:onClick="showPop"
+        android:text="showPop" />
 
 </LinearLayout>

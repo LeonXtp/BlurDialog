@@ -1,8 +1,9 @@
-package com.leonxtp.anyblurpopupwindow;
+package com.leonxtp.blurdialog.utils;
 
 import android.graphics.Bitmap;
 
 /**
+ * Util code copy from https://github.com/ddwhan0123/BlurPopupWindow. Thanks for sharing
  * Created by jiajiewang on 16/7/30.
  */
 public class FastBlur {
@@ -12,10 +13,13 @@ public class FastBlur {
      * 高斯模糊处理
      */
     public static Bitmap fastBlur(Bitmap sbitmap, float radiusf) {
+
+        int desWidth = sbitmap.getWidth() / DEFAULT_ZOOM_INT;
+        int desHeight = sbitmap.getHeight() / DEFAULT_ZOOM_INT;
+
+        //先缩放图片，增加模糊速度
         Bitmap bitmap = Bitmap.createScaledBitmap(sbitmap,
-                sbitmap.getWidth() / DEFAULT_ZOOM_INT,
-                sbitmap.getHeight() / DEFAULT_ZOOM_INT,
-                false);//先缩放图片，增加模糊速度
+                desWidth, desHeight, false);
 
         int radius = (int) radiusf;
         if (radius < 1) {
