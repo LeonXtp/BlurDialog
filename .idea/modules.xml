@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AnyBlurPopupWindow.iml" filepath="$PROJECT_DIR$/AnyBlurPopupWindow.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libblurdialog/libblurdialog.iml" filepath="$PROJECT_DIR$/libblurdialog/libblurdialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/libblurdialog/libblurpop.iml" filepath="$PROJECT_DIR$/libblurdialog/libblurpop.iml" />
     </modules>
   </component>
